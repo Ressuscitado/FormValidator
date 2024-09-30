@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    margin: 0px;
+}
+.screen {
+    display: flex;
+    height: 100vh;
+}
+.leftside {
+    flex: 1;/*para pegar o tamanho todo que sobrar do right*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.leftside img {
+    max-width: 500px;
+    height: auto;
+}
+.rightside {
+    width: 400px;
+    background-color: #DDD;
+    padding: 50px;
+}
+.rightside label {
+    display: block;
+    margin-bottom: 20px;
+}
+.rightside input {
+    width: 100%;
+    border: 1px solid #999;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 14px;
+    outline: 0;/*Para ao clciar n ficar com aquela borda automatica do navegador*/
+
+}
+.error {
+    font-size: 11px;
+    background-color: #F00;
+    color: #FFF;
+    padding: 4px;
+    border-radius: 5px;
+}
+input[type="submit"] {
+    background-color: rgb(8, 174, 118);
+}
+input[type="submit"]:hover {
+    background-color: rgb(19, 134, 96);
+}
